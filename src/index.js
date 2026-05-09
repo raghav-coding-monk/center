@@ -20,7 +20,7 @@ import ProfileDisplay from "./components/ProfileDisplay"
 import FlashMsgs from "./FlashMsgs"
 
 // 1. SET DEFAULT URL FOR BACKEND
-Axios.defaults.baseURL = "http://localhost:5005/api"
+Axios.defaults.baseURL = "/api"
 
 // 2. GLOBAL STATE (The "Warehouse" for data)
 const initialState = {
