@@ -1,7 +1,6 @@
-import React, { useState } from "react"
+import React, { useState, useContext } from "react"
 import Page from "./Page"
 import Axios from "axios"
-import React, { useState, useContext } from "react" // Added useContext
 import DispatchContext from "../DispatchContext"
 
 function HomeGuest() {
