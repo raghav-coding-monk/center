@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react"
 import Page from "./Page"
 import Axios from "axios"
-import DispatchContext from "../DispatchContext"
+import DispatchContext from "./DispatchContext" // Remove one dot
 
 function HomeGuest() {
   const appDispatch = useContext(DispatchContext) // Access the global dispatch function
