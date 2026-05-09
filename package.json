@@ -15,8 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "build": "webpack --mode production",
-  "start": "node backend/db.js"
+  "build": "webpack --mode production --config ./webpack.config.js",
+    "start": "node backend/db.js"
 },
   "eslintConfig": {
     "extends": [
