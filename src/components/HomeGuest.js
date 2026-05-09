@@ -1,8 +1,11 @@
 import React, { useState } from "react"
 import Page from "./Page"
 import Axios from "axios"
+import React, { useState, useContext } from "react" // Added useContext
+import DispatchContext from "../DispatchContext"
 
 function HomeGuest() {
+  const appDispatch = useContext(DispatchContext) // Access the global dispatch function
   const [username, setUsername] = useState()
   const [email, setEmail] = useState()
   const [password, setPassword] = useState()
@@ -13,7 +16,7 @@ function HomeGuest() {
 async function handleSubmit(e) {
   e.preventDefault()
   try {
-    const response = await Axios.post("http://localhost:5005/api/register", { 
+    const response = await Axios.post("/api/register", { 
   username, 
   email, 
   password 
