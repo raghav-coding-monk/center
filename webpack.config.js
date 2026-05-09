@@ -4,9 +4,8 @@ const path = require("path")
 module.exports = {
   entry: "./app/Main.js",
   output: {
-  filename: 'bundled.js',
-  path: path.resolve(__dirname, 'dist'), // or 'public'
-  publicPath: '/' // <--- THIS IS CRITICAL
+  path: path.resolve(__dirname, 'public'), // This could be 'dist', 'build', or 'public'
+  filename: 'bundled.js'
 },
   mode: "development",
   devtool: "source-map",
